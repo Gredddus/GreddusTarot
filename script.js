@@ -36,7 +36,7 @@ function displayCard(carta) {
     cardImg.alt = carta.nombre;
     
     // Verificamos si el nombre contiene la palabra "Invertido"
-    if (carta.nombre.toLowerCase().includes("invertido")) {
+    if (carta.nombre.toLowerCase().includes("invertido") || carta.nombre.toLowerCase().includes("invertida")) {
         cardImg.classList.add('invertida'); // Rota la imagen 180°
     } else {
         cardImg.classList.remove('invertida'); // La deja normal (derecha)
