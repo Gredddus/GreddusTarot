@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greddus - Tarot</title>
+    <!-- Importamos una tipografía mística y elegante de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Contenedor Principal (Tarjeta Vertical Flotante) -->
+    <main class="tarot-card-container">
+
+        <!-- VISTA 1: MENÚ DE BIENVENIDA (Visible por defecto) -->
+        <section id="welcome-view" class="view active">
+            <h1 class="app-title">Greddus<span class="dot">.</span>Tarot</h1>
+            <p class="app-subtitle">Tu guía de bolsillo</p>
+
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Busca una carta o palabra clave..." list="suggestions-list" autocomplete="off">
+                <!-- Datalist para el autocompletar nativo -->
+                <datalist id="suggestions-list">
+                    <!-- Se llenará dinámicamente con JavaScript -->
+                </datalist>
+                
+                <div class="button-group">
+                    <button id="search-btn" class="btn primary">Buscar</button>
+                    <button id="random-btn" class="btn secondary">🎲 Carta Random</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISTA 2: RESULTADO DE LA CARTA (Oculta al inicio) -->
+        <section id="result-view" class="view hidden">
+            
+
+            <!-- Título / Nombre de la carta -->
+            <h2 id="card-title" class="card-title-display">Nombre de la Carta</h2>
+
+            <!-- Imagen de la carta -->
+            <div class="card-image-wrapper">
+                <img id="card-img" src="" alt="Ilustración de la carta">
+            </div>
+
+            <!-- Palabras clave -->
+            <div id="card-keywords" class="keywords-box">
+                <!-- Ej: #NuevosComienzos #Inocencia #Libertad -->
+            </div>
+
+            <!-- Descripción amplia -->
+            <div class="description-scroll">
+                <p id="card-description">Descripción detallada de la carta...</p>
+            </div>
+
+            <!-- Buscador inferior en la vista de resultados (como pediste) -->
+            <div class="bottom-search">
+                <input type="text" id="search-input-bottom" placeholder="Buscar otra carta..." list="suggestions-list">
+                <div class="button-group">
+                    <button id="search-btn-bottom" class="btn primary">Buscar</button>
+                    <button id="random-btn-bottom" class="btn secondary">🎲 Random</button>
+                </div>
+            </div>
+            <!-- Botón para regresar al inicio -->
+            <button id="back-btn" class="btn-back">← Volver</button>
+        </section>
+
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

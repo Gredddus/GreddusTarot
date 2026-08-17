@@ -1,0 +1,128 @@
+/* --- Variables de diseño --- */
+:root {
+    --bg-pattern: #2c2f33; /* Color base oscuro */
+    --card-bg: rgba(255, 255, 255, 0.95); /* Fondo de la tarjeta casi blanco */
+    --accent-color: #8e7dbe; /* Color místico/morado */
+    --text-main: #333;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --border-radius: 20px;
+}
+
+/* --- Base --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-pattern);
+    /* Fondo estilo "alfombra/mosaico" usando un degradado radial sutil */
+    background-image: radial-gradient(circle at 20% 30%, #3a3d42 0%, #2c2f33 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* --- Contenedor Principal (La tarjeta vertical) --- */
+.tarot-card-container {
+    background: var(--card-bg);
+    width: 100%;
+    max-width: 400px;
+    min-height: 80vh;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- Tipografía --- */
+.app-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.dot { color: var(--text-main); }
+
+/* --- Buscador y Botones --- */
+.search-box, .bottom-search {
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn.primary { background: var(--accent-color); color: white; }
+.btn.secondary { background: #eee; color: var(--text-main); }
+
+/* --- Gestión de Vistas --- */
+.view { display: none; }
+.view.active { display: block; }
+.hidden { display: none; }
+
+/* --- Estilos de Resultado --- */
+.card-title-display {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.keywords-box {
+    margin-bottom: 15px;
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+.description-scroll {
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    background: none;
+    border: none;
+    color: #888;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+/* Clase para rotar la imagen 180 grados automáticamente */
+.card-image-wrapper img.invertida {
+    transform: rotate(180deg);
+}
