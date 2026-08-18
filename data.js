@@ -15,25 +15,25 @@ const cartas = [
         id: 3,
         nombre: "El Mago (Derecho)",
         imagen: "assets/cards/01-TheMagician.jpg",
-        descripcion: "Simboliza el **poder personal**, la **manifestación** y la **acción**. Tienes todas las herramientas necesarias a tu disposición para materializar tus metas."
+        descripcion: "Poder, Habilidad, Potencial, Concentración, Acción, Ingenio. Energia, Salud y Fuerza de voluntad. "
     },
     {
         id: 4,
         nombre: "El Mago (Invertido)",
         imagen: "assets/cards/01-TheMagician.jpg",
-        descripcion: "Simboliza el **poder personal**, la **manifestación** y la **acción**. Tienes todas las herramientas necesarias a tu disposición para materializar tus metas."
+        descripcion: "Manipulación, Mala planificación, Talento encapsulado latente o dormido, Emociones escondidas. Dudas de tu conocimiento, perdido la fé en ti y tus capacidades. Dudas sin sustento verdadero, causadas por el miedo y pueden generar conflictos en ti y en tu relación con los demás. Confunción, impaciencia, puedes estar tomando atajos sin esfuerzo."
     },
     {
         id: 5,
         nombre: "La Alta Sacerdotisa (Derecho)",
         imagen: "assets/cards/02-TheHighPriestess.jpg",
-        descripcion: "Simboliza el **poder personal**, la **manifestación** y la **acción**. Tienes todas las herramientas necesarias a tu disposición para materializar tus metas."
+        descripcion: "Intuición, Misterio, los más altos poderes, el Subconsciente, Sensibilidad, Alma. Dominio sobre le mundo espiritual. Posibilidad de embarazo. Sabiduría, no dice todo lo que sabe. Atractivo sexual. Luna, Feminidad, Inspiración. Confia en tu conocimiento interior y presta atención a tus sueños. Dejar los temores y egoísmos de lado, conflicto con miedos más ocultos. En hombre, una mujer tiene dominio sobre el, debido a la pasión. Resultado bueno y positivo, más del lado espiritual."
     },
     {
         id: 6,
         nombre: "La Alta Sacerdotisa (Invertida)",
         imagen: "assets/cards/02-TheHighPriestess.jpg",
-        descripcion: "Simboliza el **poder personal**, la **manifestación** y la **acción**. Tienes todas las herramientas necesarias a tu disposición para materializar tus metas."
+        descripcion: "Planes ocultos, necesitas escuchar tu voz interior. Dificultades para conectar con la intuición. La información que necesitas está dentro de ti. Confía en ti y en tus instintos. No estás siendo sincero contigo mismo. Atención a las señales de alerta."
     },
     {
         id: 7,
