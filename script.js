@@ -62,6 +62,7 @@ function realizarBusqueda(textoBusqueda) {
     const query = textoBusqueda.toLowerCase().trim();
     if (!query) return;
 
+    
     // Buscar coincidencia exacta por nombre primero, o si la descripción incluye el texto
     const encontrada = cartas.find(carta => 
         carta.nombre.toLowerCase().includes(query) || 
